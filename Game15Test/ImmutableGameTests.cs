@@ -58,17 +58,6 @@ namespace Game15Test
                     Assert.AreNotEqual(newSequenceOfNumberse[i], newSequenceOfNumbersInOldGame[i]);
             } 
         }
-        [Test]
-        [ExpectedException(typeof(ArgumentException))]
-        public override void Shift_NonexistentValue_ReturnException()
-        {
-            gameWithCorrectSequence.Shift(15);
-        }
-        [Test]
-        [ExpectedException(typeof(Exception))]
-        public override void Shift_ExistingValueWithoutZeroNeighbor_ReturnException()
-        {
-            gameWithCorrectSequence.Shift(8);
-        }
+
     }
 }

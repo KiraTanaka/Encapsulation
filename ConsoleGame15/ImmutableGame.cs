@@ -13,7 +13,7 @@ namespace ConsoleGame15
         public override IGame Shift(int value)
         {
             if (value >= ValueInTiles.Length)
-                throw new ArgumentNullException();
+                throw new ArgumentException();
             int valueNeighbor = 0;
             int[,] location = ValueInTiles[value];
 

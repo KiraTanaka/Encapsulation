@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleGame15
 {
-    class GameDecorator: IGameDecorator
+    public class GameDecorator: IGame
     {
         public int[,] Tiles { get; set; }
         public int[][,] ValueInTiles { get; set; }
         public int Size { get; set; }
-        public List<int,int> History { get; set; }
+        public List<int> History { get; set; } = new List<int>();
         public IGame _component { get; }
         public int this[int x, int y]
         {
@@ -28,7 +28,6 @@ namespace ConsoleGame15
             Size = component.Size;
             Tiles = new int[Size, Size];
             ValueInTiles = new int[component.ValueInTiles.Length][,];
-            History new int[Size, Size];
             foreach (var item in component.Tiles)
             {
                 Tiles[indexRow, indexColumn] = item;
@@ -55,14 +54,19 @@ namespace ConsoleGame15
                 zeroNeighbor = ValueInTiles[valueNeighbor];
             else
                 throw new Exception();
-            List<int> newSequenceOfNumbers = new List<int>();
-            foreach (var valueTile in Tiles)
-            {
-                newSequenceOfNumbers.Add(valueTile);
-            }
-            newSequenceOfNumbers[location[0, 0] * Size + location[0, 1]] = valueNeighbor;
-            newSequenceOfNumbers[zeroNeighbor[0, 0] * Size + zeroNeighbor[0, 1]] = value;
+            Tiles[location[0, 0], location[0, 1]] = valueNeighbor;
+            Tiles[zeroNeighbor[0, 0], zeroNeighbor[0, 1]] = value;
+            ValueInTiles[valueNeighbor] = location;
+            ValueInTiles[value] = zeroNeighbor;
+            History.Add(value);
             return this;
+        }
+        public double IsNeighbor(int[,] location1, int[,] location2)
+        {
+            var deltaX = location1[0, 0] - location2[0, 0];
+            var deltaY = location1[0, 1] - location2[0, 1];
+            var distance = Math.Sqrt(Math.Pow(deltaX, 2) + Math.Pow(deltaY, 2));
+            return distance;
         }
     }
 }

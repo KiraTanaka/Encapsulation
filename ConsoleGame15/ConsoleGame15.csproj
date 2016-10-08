@@ -45,7 +45,6 @@
   <ItemGroup>
     <Compile Include="Game.cs" />
     <Compile Include="GameDecorator.cs" />
-    <Compile Include="IGameDecorator.cs" />
     <Compile Include="ImmutableGame.cs" />
     <Compile Include="IGame.cs" />
     <Compile Include="Program.cs" />

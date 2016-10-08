@@ -67,6 +67,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="GameDecoratorTests.cs" />
     <Compile Include="GameTests.cs" />
     <Compile Include="GameTestsBase.cs" />
     <Compile Include="ImmutableGameTests.cs" />
