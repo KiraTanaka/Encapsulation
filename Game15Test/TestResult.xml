@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Akira\Documents\Visual Studio 2015\Projects\ConsoleGame15\Game15Test\Game15Test.csproj" total="23" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-10-08" time="23:04:07">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.5485" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="AK_COMP" user="Akira" user-domain="AK_COMP" />
+  <culture-info current-culture="ru-RU" current-uiculture="ru-RU" />
+  <test-suite type="Project" name="C:\Users\Akira\Documents\Visual Studio 2015\Projects\ConsoleGame15\Game15Test\Game15Test.csproj" executed="True" result="Success" success="True" time="0.424" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\Users\Akira\Documents\Visual Studio 2015\Projects\ConsoleGame15\Game15Test\bin\Debug\Game15Test.dll" executed="True" result="Success" success="True" time="0.399" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="Game15Test" executed="True" result="Success" success="True" time="0.398" asserts="0">
+            <results>
+              <test-suite type="TestFixture" name="GameTests" executed="True" result="Success" success="True" time="0.303" asserts="0">
+                <results>
+                  <test-case name="Game15Test.GameTests.CheckingUniquenessOfNumbers_NotUniqueSequenceOfNumbers_ReturnException" executed="True" result="Success" success="True" time="0.037" asserts="0" />
+                  <test-case name="Game15Test.GameTests.CheckingUniquenessOfNumbers_UniqueSequenceOfNumbers_ReturnTrue" executed="True" result="Success" success="True" time="0.008" asserts="1" />
+                  <test-case name="Game15Test.GameTests.GetLocation_ExistingValue_ReturnCorrectCoordinates" executed="True" result="Success" success="True" time="0.036" asserts="1" />
+                  <test-case name="Game15Test.GameTests.GetLocation_NonexistentValue_ReturnException" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="Game15Test.GameTests.Indexer_ExistingCoordinates_ReturnCorrectValue" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                  <test-case name="Game15Test.GameTests.Indexer_NonexistentCoordinates_ReturnException" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="Game15Test.GameTests.Initialization_FieldSize_ReturnCorrectSize" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="Game15Test.GameTests.Initialization_IncorrectFieldSize_ReturnException" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                  <test-case name="Game15Test.GameTests.Shift_ExistingValue_TilesMoved" executed="True" result="Success" success="True" time="0.011" asserts="9" />
+                  <test-case name="Game15Test.GameTests.Shift_ExistingValueWithoutZeroNeighbor_ReturnException" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                  <test-case name="Game15Test.GameTests.Shift_NonexistentValue_ReturnException" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="ImmutableGameTests" executed="True" result="Success" success="True" time="0.085" asserts="0">
+                <results>
+                  <test-case name="Game15Test.ImmutableGameTests.GameTests.CheckingUniquenessOfNumbers_NotUniqueSequenceOfNumbers_ReturnException" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="Game15Test.ImmutableGameTests.GameTests.CheckingUniquenessOfNumbers_UniqueSequenceOfNumbers_ReturnTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="Game15Test.ImmutableGameTests.GameTests.GetLocation_ExistingValue_ReturnCorrectCoordinates" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="Game15Test.ImmutableGameTests.GameTests.GetLocation_NonexistentValue_ReturnException" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="Game15Test.ImmutableGameTests.GameTests.Indexer_ExistingCoordinates_ReturnCorrectValue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="Game15Test.ImmutableGameTests.GameTests.Indexer_NonexistentCoordinates_ReturnException" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="Game15Test.ImmutableGameTests.GameTests.Initialization_FieldSize_ReturnCorrectSize" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="Game15Test.ImmutableGameTests.GameTests.Initialization_IncorrectFieldSize_ReturnException" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="Game15Test.ImmutableGameTests.GameTests.Shift_ExistingValue_TilesMoved" executed="True" result="Success" success="True" time="0.000" asserts="9" />
+                  <test-case name="Game15Test.ImmutableGameTests.GameTests.Shift_ExistingValueWithoutZeroNeighbor_ReturnException" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="Game15Test.ImmutableGameTests.GameTests.Shift_NonexistentValue_ReturnException" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                  <test-case name="Game15Test.ImmutableGameTests.Shift_ExistingValue_CreationOfNewGamesWithMovedTiles" executed="True" result="Success" success="True" time="0.004" asserts="9" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
